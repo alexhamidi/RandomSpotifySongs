@@ -32,8 +32,23 @@ Now, you're ready to Spotibulk!
 
 Provided a list of Spotify artist ids and nothing else, Spotibulk returns every (unique) song of these artists and their related artists.
 
-### ```search_depth:```
+### ```seed_ids:```
+- 
 
+### ```search_depth:```
+- 
+
+### ```max_albums_per_artist:```
+- 
+
+### ```max_tracks_per_album_request:```
+- 
+
+### ```max_related_artists_per_artist:```
+- e
+
+### ```max_songs:```
+- 
 
 
 
