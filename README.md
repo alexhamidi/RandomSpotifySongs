@@ -34,22 +34,22 @@ Provided a list of Spotify artist ids and nothing else, Spotibulk returns every 
 
 ### Parameters: 
 ```seed_ids:```
-- 
+- e
 
 ```search_depth:```
-- 
+- e
 
 ```max_albums_per_artist:```
-- 
+- e
 
 ```max_tracks_per_album_request:```
-- 
+- e
 
 ```max_related_artists_per_artist:```
 - e
 
 ```max_songs:```
-- 
+- e
 
 
 
