@@ -2,11 +2,13 @@
 
 ## Info
 Spotibulk is an algorithm that returns a list of related spotify track ids given a set of artists. It:
-
 - Supports fetching a very high number of spotify ids (tested to 2 million, though it took a while)
 - Uses a Breath-first search approach on artists' related artists to gradually expand the search space
 - Provides several parameters to adjust the search behavior, allowing you to fine-tune the app based on your needs (See usage for details)
 - Is easily modifiable to fetch albums or artists
+
+- Storing everything in a list allows for versatility - once you have the list, you can add tracks to a database, write them to a file, or even add them to a playlist. 
+
 
 ## Install
 
