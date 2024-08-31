@@ -13,7 +13,10 @@ To start, either
 - Clone into this repository in your project (```git clone https://github.com/alexhamidi/Spotibulk.git```)
 - Copy and paste the content of 'index.txt' into a local file that you want to use to execute searches
 
-After this, you need to install 
+After this, you need to install aiohttp:
+```python
+pip3 install aiohttp
+```
 
 ## Usage
 
