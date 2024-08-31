@@ -1,7 +1,7 @@
 # Spotibulk
 
 ## Info
-Spotify is an algorithm that returns a list of related spotify track ids given a set of artists. It:
+Spotibulk is an algorithm that returns a list of related spotify track ids given a set of artists. It:
 
 - Supports fetching a very high number of spotify ids (tested to 2 million, though it took a while)
 - Uses a Breath-first search approach on artists' related artists to gradually expand the search space
@@ -45,24 +45,25 @@ Provided a list of Spotify artist ids and nothing else, Spotibulk returns every 
 
 `max_albums_per_artist` _(Optional, default: inf)_:
 - The maximum number of albums to fetch per artist
-- Limits the number of albums considered for each artist, useful for very prolific artists or to reduce API calls
-- Randomly selects albums if the artist has more than this number
+- Useful to limit the influence of prolific artists on the result
+- Randomly selects albums if the artist has more albums than this number
 
 `max_tracks_per_album_request`  _(Optional, default: inf)_:
 - The maximum number of tracks to fetch per album request
 - Limits the number of tracks fetched from each album
-- Randomly selects tracks if an album has more than this number
+- Randomly selects tracks if a set of albums has more tracks than this number
+- **Note:** this is _not_ the maximum tracks retrieved per album. Fetching tracks album by album is too computationally expensive, and this parameter adjusts how many tracks are selected in each batch request of 20 songs.
 
 `max_related_artists_per_artist` _(Optional, default: inf)_:
 - The maximum number of related artists to fetch for each artist
-- Limits the branching factor of the artist search, useful for controlling the breadth of the search
-- Randomly selects related artists if an artist has more than this number of related artists
+- Useful for controlling the breadth of the search
+- Also useful to accelerate the spread of the search space
+- Randomly selects related artists if an artist has more related artist than this number of related artists
 
 `max_songs`  _(Optional, default: -1 [no limit])_:
 - The maximum total number of songs to return
-- Useful for capping the total size of the returned list
-- The program will stop adding songs once this limit is reached, even if there are more available
-
+- Useful for capping the total size of the returned list for certain applications
+- **Note:** this value is not guaranteed - if the number of returned songs is lower than ```max_songs```, this parameter changes nothing
 
 
 ### Example
