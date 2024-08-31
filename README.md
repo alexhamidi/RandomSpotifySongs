@@ -28,6 +28,15 @@ Now, you're ready to Spotibulk!
 
 ## Usage
 
+
+
+Provided a list of Spotify artist ids and nothing else, Spotibulk returns every (unique) song of these artists and their related artists.
+
+### ```search_depth:```
+
+
+
+
 ### Example
 
 ```python
@@ -47,7 +56,3 @@ async def main():
 asyncio.run(main())
 
 ```
-
-Provided a list of Spotify artist ids and nothing else, Spotibulk returns every (unique) song of these artists and their related artists.
-
-### ```search_depth:```
