@@ -7,6 +7,13 @@
 - Provides several parameters to adjust the search behavior, allowing you to fine-tune the app based on your needs (See usage for details)
 - The primary script can be easily modified to fetch albums or artists
 
+## Install
+
+To start, either
+- Clone into this repository in your project (```git clone https://github.com/alexhamidi/Spotibulk.git```)
+- Copy and paste the content of 'index.txt' into a local file that you want to use to execute searches
+
+After this, you need to install 
 
 ## Usage
 
