@@ -10,8 +10,25 @@
 
 ## Usage
 
-```js
-import chalk from 'chalk';
+###Example
 
-console.log(chalk.blue('Hello world!'));
+```python
+from index import generate_songs
+
+async def main():
+    seed_ids = [
+        '0iEtIxbK0KxaSlF7G42ZOp',  # Travis Scott
+        '5K4W6rqBFWDnAN6FQUkS6x',  # Ye
+        '699OTQXzgjhIYAHMy9RyPD',  # Carti
+    ]
+
+    song_ids = await generate_songs(seed_ids, search_depth=2, )
+
+    print(f"ids retreived succesfully, {len(song_ids)} ids in the list. First 5 items: {song_ids[:5]}")
+
+asyncio.run(main())
+
+
+
+
 ```
