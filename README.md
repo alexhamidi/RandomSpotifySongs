@@ -22,9 +22,9 @@ async def main():
         '699OTQXzgjhIYAHMy9RyPD',  # Carti
     ]
 
-    song_ids = await generate_songs(seed_ids, search_depth=2, max_albums_per_artist=1)
+    trap_song_ids = await generate_songs(seed_ids, search_depth=2, max_albums_per_artist=1)
 
-    print(f"ids retreived succesfully, {len(song_ids)} ids in the list. First 5 items: {song_ids[:5]}")
+    print(f"ids retreived succesfully, {len(trap_song_ids)} ids in the list. First 5 items: {trap_song_ids[:5]}")
 
 asyncio.run(main())
 
