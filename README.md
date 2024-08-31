@@ -9,7 +9,7 @@
 
 ## Install
 
-To start clone into this repository in your project:
+To start, clone into this repository in your project:
 ```git
 git clone https://github.com/alexhamidi/Spotibulk.git
 ```
