@@ -7,7 +7,8 @@ Spotibulk is an algorithm that returns a list of related spotify track ids given
 - Provides several parameters to adjust the search behavior, allowing you to fine-tune the app based on your needs (See usage for details)
 - Is easily modifiable to fetch albums or artists
 
-- Storing everything in a list allows for versatility - once you have the list, you can add tracks to a database, write them to a file, or even add them to a playlist. 
+### storting
+- Storing everything in a list allows for versatility - once you have the list, you can store tracks in a database, write them to a file, or even add them to a playlist. 
 
 
 ## Install
