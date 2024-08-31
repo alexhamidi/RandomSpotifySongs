@@ -39,7 +39,6 @@ Provided a list of Spotify artist ids and nothing else, Spotibulk returns every 
 
 `search_depth` _(Optional, default: 1)_:
 - This value represents the number of rounds of BFS are completed on the existing artists.
-- Default is 1 (only immediate related artists)
 - Increasing this leads to exponentially higher songs and runtime.
 - Example: if this is 2, then you get all the artists related to the seed artists, then you get all the artists related to _those_ artists, then you get the tracks of every single artist you've encountered.
 
