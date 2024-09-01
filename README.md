@@ -62,7 +62,7 @@ Provided a list of Spotify artist ids and nothing else, Spotibulk returns every 
 - Also useful to accelerate the spread of the search space
 - Randomly selects related artists if an artist has more related artist than this number of related artists
 
-`max_songs`  _(Optional, default: -1 [no limit])_:
+`max_songs`  _(Optional, default: inf_:
 - The maximum total number of songs to return
 - Useful for capping the total size of the returned list for certain applications
 - **Note:** this value is not guaranteed - if the number of returned songs is lower than ```max_songs```, this parameter changes nothing
